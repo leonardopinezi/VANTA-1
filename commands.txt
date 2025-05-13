@@ -1,0 +1,20 @@
+0x00 = null - 0 bytes
+0x01 = put - 3 bytes
+0x02 = get to register - 3 bytes
+0x03 = copy a register to other register - 3 bytes
+0x04 = addiction of two registers - 3 bytes
+0x05 = subtraction of two registers - 3 bytes
+0x06 = jump to a slot in partition - 2 bytes
+0x07 = jump to a slot in partition if flag Z == 1 - 3 bytes
+0x08 = print a register value in screen - 2 bytes
+0x09 = compare 2 registers and store in register 4 - 3 bytes
+0x0a = set a constant (immediate) value in a specific register - 3 bytes
+0x0b = read user input - 2 bytes
+0x0c = write a register value in ram - 3 bytes
+0x0d = print from ram as a chat - 2 bytes
+0xff = halt
+
+
+RAM 800 TO (VIDEO WIDTH * VIDEO HEIGHT) - VIDEO MEMORY
+RAM 598 TO 599 - READ AND WRITE INDEX TRACKER
+RAM 600 TO 700 - KEYBOARD BUFFER
